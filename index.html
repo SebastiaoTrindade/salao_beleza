@@ -10,6 +10,15 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Zd/5s6mtKCVxEvUDE... (etc)" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 <body>
     <!--Navbar-->
@@ -55,26 +64,39 @@
     </header>
 
     <!--Services Section-->
-    <section id="services" class="container my-5">
-        <h2 class="text-center mb-4">Nossos Serviços</h2>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <h4>Cortes femininos</h4>
-                    <p>A partir de R$ 60,00</p>   
-                    <img src="./assets/images/corte.webp" alt="Corte Feminino" class="img-fluid mb-2" style="width: 350px; height: 250px;">                 
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Nossos Serviços</h2>
+            <div class="row justify-content-center g-4">
+                <!--Corte cabelo-->
+                <div class="col-md-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 hover-effect">
+                        <i class="fas fa-cut fa-2x text-secondary mb-3"></i>
+                        <h5 class="fw-bold">Cortes femininos</h5>
+                        <p class="small text-muted">Cortes modernos e personalizados, para valorizar ainda mais o seu estilo.</p>                          
+                        <img src="./assets/images/corte.webp" alt="Corte Feminino" class="img-fluid mb-2" style="width: 350px; height: 250px;">
+                    </div>                                       
                 </div>
-                <div class="col-md-4">
-                    <h4>Escova e Hidratação</h4>
-                    <p>A partir de R$ 80,00</p> 
-                    <img src="./assets/images/escova.jpeg" alt="Escova Feminina" class="img-fluid mb-2" style="width: 350px; height: 250px;">                   
+                <!--Escova-->
+                <div class="col-md-4 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 hover-effect">
+                        <i class="fas fa-spa fa-2x text-info mb-3"></i>
+                        <h5 class="fw-bold">Escova e Hidratação</h5>
+                        <p class="small text-muted">Tratamento intenso que recupera a saúde dos fios, reduz o frizz e o ressecamento.</p>                         
+                        <img src="./assets/images/escova.jpeg" alt="Escova Feminina" class="img-fluid mb-2" style="width: 350px; height: 250px;"> 
+                    </div>                                        
                 </div>
-                <div class="col-md-4">
-                    <h4>Manicure e pedicure</h4>
-                    <p>A partir de R$ 40,00</p>   
-                    <img src="./assets/images/manicure.jpg" alt="Manicure e Pedicure" class="img-fluid mb-2" style="width: 350px; height: 250px;">                 
+                <!--Manicure-->
+                <div class="col-md-4 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 hover-effect">
+                        <i class="fas fa-hand-sparkles fs-1 text-danger mb-3"></i>
+                        <h5 class="fw-bold">Manicure e pedicure</h5>
+                        <p class="small text-muted">Beleza das mãos e pés, limpeza profunda, prevenção de infecções e estresse</p>                          
+                        <img src="./assets/images/manicure.jpg" alt="Manicure e Pedicure" class="img-fluid mb-2" style="width: 350px; height: 250px;"> 
+                    </div>                                     
                 </div>
-            </div>            
-        </div>
+            </div>    
+        </div>          
     </section>
 
     <!--About Us Section-->
@@ -155,5 +177,12 @@
 
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
 </body>
 </html>

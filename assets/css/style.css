@@ -107,3 +107,17 @@ body{
 #contact .btn-success:hover{
     transform: scale(1.05);    
 }
+
+/* Botão voltar página*/
+#btn-topo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: none;
+    padding: 0.75rem 1rem;    
+    border-radius: 50%;    
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+}

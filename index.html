@@ -22,7 +22,7 @@
 </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="topo" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">            
             <a class="navbar-brand d-flex align-items-center gap-2" href="#">
                 <img src="./assets/images/logo.png" alt="Logo" style="width: 50px; height: 50px;">
@@ -51,7 +51,7 @@
     </nav>
 
     <!--Header-->
-    <header id="topo" class="hero-header">
+    <header class="hero-header">
         <div class="container text-center d-flex flex-column align-items-center justify-content-center h-100">
             <h1 class="display-4">Realce sua beleza com a gente!</h1>
             <p class="lead">Cortes, escovas, unhas e muito mais</p>    
@@ -179,8 +179,10 @@
         <p class="mb-0">&copy; 2025 Beleza Pura. Todos os direitos reservados.</p>        
     </footer>
 
-    <a href="#topo" id="btn-topo" class="btn btn-success">
-        <i class="fas fa-arrow-up"></i>
+    <!--Button Top -->
+    <a href="#" id="btn-topo" class="btn btn-success rounded-circle shadow"
+        style="position: fixed; bottom: 20px; right: 20px; display: none; opacity: 0; transition: all 0.4s ease; z-index: 999;">       
+        <i class="fas fa-chevron-up"></i>
     </a>
 
 
